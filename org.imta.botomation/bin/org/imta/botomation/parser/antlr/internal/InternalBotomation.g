@@ -172,85 +172,55 @@ ruleAction returns [EObject current=null]
 }:
 	(
 		(
-			{ 
-			  getUnorderedGroupHelper().enter(grammarAccess.getActionAccess().getUnorderedGroup());
+			otherlv_0='openURL'
+			{
+				newLeafNode(otherlv_0, grammarAccess.getActionAccess().getOpenURLKeyword_0_0());
 			}
 			(
 				(
-		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getActionAccess().getUnorderedGroup(), 0)}?=>(
-				{
-					getUnorderedGroupHelper().select(grammarAccess.getActionAccess().getUnorderedGroup(), 0);
-				}
-							({true}?=>(otherlv_1='openURL'
-							{
-								newLeafNode(otherlv_1, grammarAccess.getActionAccess().getOpenURLKeyword_0_0());
-							}
-							(
-								(
-									lv_openURL_2_0=RULE_STRING
-									{
-										newLeafNode(lv_openURL_2_0, grammarAccess.getActionAccess().getOpenURLSTRINGTerminalRuleCall_0_1_0());
-									}
-									{
-										if ($current==null) {
-											$current = createModelElement(grammarAccess.getActionRule());
-										}
-										setWithLastConsumed(
-											$current,
-											"openURL",
-											lv_openURL_2_0,
-											"org.eclipse.xtext.common.Terminals.STRING");
-									}
-								)
-							)
-							))
-				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getActionAccess().getUnorderedGroup());
-				}
-			)
-		)|
-		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getActionAccess().getUnorderedGroup(), 1)}?=>(
-				{
-					getUnorderedGroupHelper().select(grammarAccess.getActionAccess().getUnorderedGroup(), 1);
-				}
-							({true}?=>(otherlv_3='verifyPageContains'
-							{
-								newLeafNode(otherlv_3, grammarAccess.getActionAccess().getVerifyPageContainsKeyword_1_0());
-							}
-							(
-								(
-									{
-										newCompositeNode(grammarAccess.getActionAccess().getVerifyPageContainsVerifyPageContainsParserRuleCall_1_1_0());
-									}
-									lv_verifyPageContains_4_0=ruleVerifyPageContains
-									{
-										if ($current==null) {
-											$current = createModelElementForParent(grammarAccess.getActionRule());
-										}
-										set(
-											$current,
-											"verifyPageContains",
-											lv_verifyPageContains_4_0,
-											"org.imta.botomation.Botomation.VerifyPageContains");
-										afterParserOrEnumRuleCall();
-									}
-								)
-							)
-							))
-				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getActionAccess().getUnorderedGroup());
-				}
+					lv_openURL_1_0=RULE_STRING
+					{
+						newLeafNode(lv_openURL_1_0, grammarAccess.getActionAccess().getOpenURLSTRINGTerminalRuleCall_0_1_0());
+					}
+					{
+						if ($current==null) {
+							$current = createModelElement(grammarAccess.getActionRule());
+						}
+						setWithLastConsumed(
+							$current,
+							"openURL",
+							lv_openURL_1_0,
+							"org.eclipse.xtext.common.Terminals.STRING");
+					}
+				)
 			)
 		)
-				)+
-				{getUnorderedGroupHelper().canLeave(grammarAccess.getActionAccess().getUnorderedGroup())}?
-			)
-		)
-			{ 
-			  getUnorderedGroupHelper().leave(grammarAccess.getActionAccess().getUnorderedGroup());
+		    |
+		(
+			otherlv_2='verifyPageContains'
+			{
+				newLeafNode(otherlv_2, grammarAccess.getActionAccess().getVerifyPageContainsKeyword_1_0());
 			}
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getActionAccess().getVerifyPageContainsVerifyPageContainsParserRuleCall_1_1_0());
+					}
+					lv_verifyPageContains_3_0=ruleVerifyPageContains
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getActionRule());
+						}
+						set(
+							$current,
+							"verifyPageContains",
+							lv_verifyPageContains_3_0,
+							"org.imta.botomation.Botomation.VerifyPageContains");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+		)
 	)
 ;
 

@@ -2,18 +2,17 @@ grammar org.imta.botomation.Botomation with org.eclipse.xtext.common.Terminals
 
 generate botomation "http://www.imta.org/botomation/Botomation"
 
-Botomation: 
-	'botomation' Browser 'actions' actions+=Action*
+Botomation:
+	'botomation' Browser
+	'actions' actions+=Action*
 ;
 
 Browser:
 	'browser' name=BROWSERNAME;
 	
 Action:
-	(
-		('openURL' openURL=STRING) &
-		('verifyPageContains' verifyPageContains=VerifyPageContains)
-	)
+	('openURL' openURL=STRING) |
+	('verifyPageContains' verifyPageContains=VerifyPageContains)
 ;
 
 VerifyPageContains:

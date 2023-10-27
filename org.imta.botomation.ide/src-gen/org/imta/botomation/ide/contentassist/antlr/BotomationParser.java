@@ -31,6 +31,7 @@ public class BotomationParser extends AbstractContentAssistParser {
 		}
 		
 		private static void init(ImmutableMap.Builder<AbstractElement, String> builder, BotomationGrammarAccess grammarAccess) {
+			builder.put(grammarAccess.getActionAccess().getAlternatives(), "rule__Action__Alternatives");
 			builder.put(grammarAccess.getBotomationAccess().getGroup(), "rule__Botomation__Group__0");
 			builder.put(grammarAccess.getBrowserAccess().getGroup(), "rule__Browser__Group__0");
 			builder.put(grammarAccess.getActionAccess().getGroup_0(), "rule__Action__Group_0__0");
@@ -43,7 +44,6 @@ public class BotomationParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getActionAccess().getVerifyPageContainsAssignment_1_1(), "rule__Action__VerifyPageContainsAssignment_1_1");
 			builder.put(grammarAccess.getVerifyPageContainsAccess().getTypeAssignment_0_1(), "rule__VerifyPageContains__TypeAssignment_0_1");
 			builder.put(grammarAccess.getVerifyPageContainsAccess().getTargetAssignment_1_1(), "rule__VerifyPageContains__TargetAssignment_1_1");
-			builder.put(grammarAccess.getActionAccess().getUnorderedGroup(), "rule__Action__UnorderedGroup");
 			builder.put(grammarAccess.getVerifyPageContainsAccess().getUnorderedGroup(), "rule__VerifyPageContains__UnorderedGroup");
 		}
 	}

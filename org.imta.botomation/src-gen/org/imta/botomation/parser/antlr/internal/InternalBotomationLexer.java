@@ -195,10 +195,10 @@ public class InternalBotomationLexer extends Lexer {
         try {
             int _type = RULE_TYPE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBotomation.g:355:11: ( ( 'link' | 'text' ) )
-            // InternalBotomation.g:355:13: ( 'link' | 'text' )
+            // InternalBotomation.g:325:11: ( ( 'link' | 'text' ) )
+            // InternalBotomation.g:325:13: ( 'link' | 'text' )
             {
-            // InternalBotomation.g:355:13: ( 'link' | 'text' )
+            // InternalBotomation.g:325:13: ( 'link' | 'text' )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -216,7 +216,7 @@ public class InternalBotomationLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // InternalBotomation.g:355:14: 'link'
+                    // InternalBotomation.g:325:14: 'link'
                     {
                     match("link"); 
 
@@ -224,7 +224,7 @@ public class InternalBotomationLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalBotomation.g:355:21: 'text'
+                    // InternalBotomation.g:325:21: 'text'
                     {
                     match("text"); 
 
@@ -250,10 +250,10 @@ public class InternalBotomationLexer extends Lexer {
         try {
             int _type = RULE_BROWSERNAME;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBotomation.g:357:18: ( ( 'chrome' | 'firefox' | 'opera' | 'safari' ) )
-            // InternalBotomation.g:357:20: ( 'chrome' | 'firefox' | 'opera' | 'safari' )
+            // InternalBotomation.g:327:18: ( ( 'chrome' | 'firefox' | 'opera' | 'safari' ) )
+            // InternalBotomation.g:327:20: ( 'chrome' | 'firefox' | 'opera' | 'safari' )
             {
-            // InternalBotomation.g:357:20: ( 'chrome' | 'firefox' | 'opera' | 'safari' )
+            // InternalBotomation.g:327:20: ( 'chrome' | 'firefox' | 'opera' | 'safari' )
             int alt2=4;
             switch ( input.LA(1) ) {
             case 'c':
@@ -285,7 +285,7 @@ public class InternalBotomationLexer extends Lexer {
 
             switch (alt2) {
                 case 1 :
-                    // InternalBotomation.g:357:21: 'chrome'
+                    // InternalBotomation.g:327:21: 'chrome'
                     {
                     match("chrome"); 
 
@@ -293,7 +293,7 @@ public class InternalBotomationLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalBotomation.g:357:30: 'firefox'
+                    // InternalBotomation.g:327:30: 'firefox'
                     {
                     match("firefox"); 
 
@@ -301,7 +301,7 @@ public class InternalBotomationLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // InternalBotomation.g:357:40: 'opera'
+                    // InternalBotomation.g:327:40: 'opera'
                     {
                     match("opera"); 
 
@@ -309,7 +309,7 @@ public class InternalBotomationLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // InternalBotomation.g:357:48: 'safari'
+                    // InternalBotomation.g:327:48: 'safari'
                     {
                     match("safari"); 
 
@@ -335,10 +335,10 @@ public class InternalBotomationLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBotomation.g:359:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // InternalBotomation.g:359:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // InternalBotomation.g:329:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // InternalBotomation.g:329:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // InternalBotomation.g:359:11: ( '^' )?
+            // InternalBotomation.g:329:11: ( '^' )?
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -347,7 +347,7 @@ public class InternalBotomationLexer extends Lexer {
             }
             switch (alt3) {
                 case 1 :
-                    // InternalBotomation.g:359:11: '^'
+                    // InternalBotomation.g:329:11: '^'
                     {
                     match('^'); 
 
@@ -365,7 +365,7 @@ public class InternalBotomationLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // InternalBotomation.g:359:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // InternalBotomation.g:329:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop4:
             do {
                 int alt4=2;
@@ -414,10 +414,10 @@ public class InternalBotomationLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBotomation.g:361:10: ( ( '0' .. '9' )+ )
-            // InternalBotomation.g:361:12: ( '0' .. '9' )+
+            // InternalBotomation.g:331:10: ( ( '0' .. '9' )+ )
+            // InternalBotomation.g:331:12: ( '0' .. '9' )+
             {
-            // InternalBotomation.g:361:12: ( '0' .. '9' )+
+            // InternalBotomation.g:331:12: ( '0' .. '9' )+
             int cnt5=0;
             loop5:
             do {
@@ -431,7 +431,7 @@ public class InternalBotomationLexer extends Lexer {
 
                 switch (alt5) {
             	case 1 :
-            	    // InternalBotomation.g:361:13: '0' .. '9'
+            	    // InternalBotomation.g:331:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -463,10 +463,10 @@ public class InternalBotomationLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBotomation.g:363:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // InternalBotomation.g:363:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // InternalBotomation.g:333:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // InternalBotomation.g:333:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // InternalBotomation.g:363:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // InternalBotomation.g:333:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -484,10 +484,10 @@ public class InternalBotomationLexer extends Lexer {
             }
             switch (alt8) {
                 case 1 :
-                    // InternalBotomation.g:363:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // InternalBotomation.g:333:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // InternalBotomation.g:363:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // InternalBotomation.g:333:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop6:
                     do {
                         int alt6=3;
@@ -503,7 +503,7 @@ public class InternalBotomationLexer extends Lexer {
 
                         switch (alt6) {
                     	case 1 :
-                    	    // InternalBotomation.g:363:21: '\\\\' .
+                    	    // InternalBotomation.g:333:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -511,7 +511,7 @@ public class InternalBotomationLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalBotomation.g:363:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // InternalBotomation.g:333:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -536,10 +536,10 @@ public class InternalBotomationLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalBotomation.g:363:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // InternalBotomation.g:333:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // InternalBotomation.g:363:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // InternalBotomation.g:333:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop7:
                     do {
                         int alt7=3;
@@ -555,7 +555,7 @@ public class InternalBotomationLexer extends Lexer {
 
                         switch (alt7) {
                     	case 1 :
-                    	    // InternalBotomation.g:363:54: '\\\\' .
+                    	    // InternalBotomation.g:333:54: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -563,7 +563,7 @@ public class InternalBotomationLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalBotomation.g:363:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // InternalBotomation.g:333:61: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -606,12 +606,12 @@ public class InternalBotomationLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBotomation.g:365:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // InternalBotomation.g:365:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // InternalBotomation.g:335:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // InternalBotomation.g:335:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // InternalBotomation.g:365:24: ( options {greedy=false; } : . )*
+            // InternalBotomation.g:335:24: ( options {greedy=false; } : . )*
             loop9:
             do {
                 int alt9=2;
@@ -636,7 +636,7 @@ public class InternalBotomationLexer extends Lexer {
 
                 switch (alt9) {
             	case 1 :
-            	    // InternalBotomation.g:365:52: .
+            	    // InternalBotomation.g:335:52: .
             	    {
             	    matchAny(); 
 
@@ -666,12 +666,12 @@ public class InternalBotomationLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBotomation.g:367:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // InternalBotomation.g:367:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // InternalBotomation.g:337:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // InternalBotomation.g:337:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // InternalBotomation.g:367:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // InternalBotomation.g:337:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop10:
             do {
                 int alt10=2;
@@ -684,7 +684,7 @@ public class InternalBotomationLexer extends Lexer {
 
                 switch (alt10) {
             	case 1 :
-            	    // InternalBotomation.g:367:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // InternalBotomation.g:337:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -704,7 +704,7 @@ public class InternalBotomationLexer extends Lexer {
                 }
             } while (true);
 
-            // InternalBotomation.g:367:40: ( ( '\\r' )? '\\n' )?
+            // InternalBotomation.g:337:40: ( ( '\\r' )? '\\n' )?
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -713,9 +713,9 @@ public class InternalBotomationLexer extends Lexer {
             }
             switch (alt12) {
                 case 1 :
-                    // InternalBotomation.g:367:41: ( '\\r' )? '\\n'
+                    // InternalBotomation.g:337:41: ( '\\r' )? '\\n'
                     {
-                    // InternalBotomation.g:367:41: ( '\\r' )?
+                    // InternalBotomation.g:337:41: ( '\\r' )?
                     int alt11=2;
                     int LA11_0 = input.LA(1);
 
@@ -724,7 +724,7 @@ public class InternalBotomationLexer extends Lexer {
                     }
                     switch (alt11) {
                         case 1 :
-                            // InternalBotomation.g:367:41: '\\r'
+                            // InternalBotomation.g:337:41: '\\r'
                             {
                             match('\r'); 
 
@@ -756,10 +756,10 @@ public class InternalBotomationLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBotomation.g:369:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // InternalBotomation.g:369:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalBotomation.g:339:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // InternalBotomation.g:339:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // InternalBotomation.g:369:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalBotomation.g:339:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt13=0;
             loop13:
             do {
@@ -813,8 +813,8 @@ public class InternalBotomationLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalBotomation.g:371:16: ( . )
-            // InternalBotomation.g:371:18: .
+            // InternalBotomation.g:341:16: ( . )
+            // InternalBotomation.g:341:18: .
             {
             matchAny(); 
 

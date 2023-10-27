@@ -6,6 +6,7 @@ package org.imta.botomation.services;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import java.util.List;
+import org.eclipse.xtext.Alternatives;
 import org.eclipse.xtext.Assignment;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
@@ -32,11 +33,13 @@ public class BotomationGrammarAccess extends AbstractElementFinder.AbstractGramm
 		private final RuleCall cActionsActionParserRuleCall_3_0 = (RuleCall)cActionsAssignment_3.eContents().get(0);
 		
 		//Botomation:
-		//    'botomation' Browser 'actions' actions+=Action*
+		//    'botomation' Browser
+		//    'actions' actions+=Action*
 		//;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'botomation' Browser 'actions' actions+=Action*
+		//'botomation' Browser
+		//'actions' actions+=Action*
 		public Group getGroup() { return cGroup; }
 		
 		//'botomation'
@@ -79,29 +82,25 @@ public class BotomationGrammarAccess extends AbstractElementFinder.AbstractGramm
 	}
 	public class ActionElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.imta.botomation.Botomation.Action");
-		private final UnorderedGroup cUnorderedGroup = (UnorderedGroup)rule.eContents().get(1);
-		private final Group cGroup_0 = (Group)cUnorderedGroup.eContents().get(0);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
 		private final Keyword cOpenURLKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
 		private final Assignment cOpenURLAssignment_0_1 = (Assignment)cGroup_0.eContents().get(1);
 		private final RuleCall cOpenURLSTRINGTerminalRuleCall_0_1_0 = (RuleCall)cOpenURLAssignment_0_1.eContents().get(0);
-		private final Group cGroup_1 = (Group)cUnorderedGroup.eContents().get(1);
+		private final Group cGroup_1 = (Group)cAlternatives.eContents().get(1);
 		private final Keyword cVerifyPageContainsKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
 		private final Assignment cVerifyPageContainsAssignment_1_1 = (Assignment)cGroup_1.eContents().get(1);
 		private final RuleCall cVerifyPageContainsVerifyPageContainsParserRuleCall_1_1_0 = (RuleCall)cVerifyPageContainsAssignment_1_1.eContents().get(0);
 		
 		//Action:
-		//    (
-		//        ('openURL' openURL=STRING) &
-		//        ('verifyPageContains' verifyPageContains=VerifyPageContains)
-		//    )
+		//    ('openURL' openURL=STRING) |
+		//    ('verifyPageContains' verifyPageContains=VerifyPageContains)
 		//;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//(
-		//    ('openURL' openURL=STRING) &
-		//    ('verifyPageContains' verifyPageContains=VerifyPageContains)
-		//)
-		public UnorderedGroup getUnorderedGroup() { return cUnorderedGroup; }
+		//('openURL' openURL=STRING) |
+		//('verifyPageContains' verifyPageContains=VerifyPageContains)
+		public Alternatives getAlternatives() { return cAlternatives; }
 		
 		//('openURL' openURL=STRING)
 		public Group getGroup_0() { return cGroup_0; }
@@ -231,7 +230,8 @@ public class BotomationGrammarAccess extends AbstractElementFinder.AbstractGramm
 
 	
 	//Botomation:
-	//    'botomation' Browser 'actions' actions+=Action*
+	//    'botomation' Browser
+	//    'actions' actions+=Action*
 	//;
 	public BotomationElements getBotomationAccess() {
 		return pBotomation;
@@ -252,10 +252,8 @@ public class BotomationGrammarAccess extends AbstractElementFinder.AbstractGramm
 	}
 	
 	//Action:
-	//    (
-	//        ('openURL' openURL=STRING) &
-	//        ('verifyPageContains' verifyPageContains=VerifyPageContains)
-	//    )
+	//    ('openURL' openURL=STRING) |
+	//    ('verifyPageContains' verifyPageContains=VerifyPageContains)
 	//;
 	public ActionElements getActionAccess() {
 		return pAction;

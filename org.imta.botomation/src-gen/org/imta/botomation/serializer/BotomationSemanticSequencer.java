@@ -60,7 +60,7 @@ public class BotomationSemanticSequencer extends AbstractDelegatingSemanticSeque
 	 *     Action returns Action
 	 *
 	 * Constraint:
-	 *     (openURL=STRING | verifyPageContains=VerifyPageContains)+
+	 *     (openURL=STRING | verifyPageContains=VerifyPageContains)
 	 * </pre>
 	 */
 	protected void sequence_Action(ISerializationContext context, org.imta.botomation.botomation.Action semanticObject) {

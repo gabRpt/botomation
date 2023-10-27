@@ -1,0 +1,27 @@
+grammar org.imta.botomation.Botomation with org.eclipse.xtext.common.Terminals
+
+generate botomation "http://www.imta.org/botomation/Botomation"
+
+Browser:
+	'browser' name=STRING 'actions' actions+=Action*;
+	
+Action:
+	(
+		('openURL' openURL=STRING) &
+		('verifyPageContains' verifyPageContains=VerifyPageContains)
+	)
+;
+
+VerifyPageContains:
+	(
+		('type' type=TYPE) &
+		('target' target=STRING)
+	)
+;
+
+TYPE:
+	LINK | TEXT
+;
+
+terminal LINK: 'link';
+terminal TEXT: 'text';

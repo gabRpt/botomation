@@ -1,0 +1,6 @@
+grammar org.imta.botomation.Botomation with org.eclipse.xtext.common.Terminals
+
+generate botomation "http://www.imta.org/botomation/Botomation"
+
+Browser:
+	'browser' name=STRING;

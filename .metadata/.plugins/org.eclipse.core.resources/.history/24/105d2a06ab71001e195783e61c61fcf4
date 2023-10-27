@@ -1,0 +1,18 @@
+grammar org.xtext.example.calendar.MyCld with org.eclipse.xtext.common.Terminals
+
+generate myCld "http://www.xtext.org/example/calendar/MyCld"
+
+Calendar:
+	'calendar' '{' events+=Event* '}';
+	
+Event:
+	'event' name=STRING '{'
+		(
+			('at' at=STRING) & 
+			('on' on=DATE)
+		)
+	'}';
+
+terminal DATE: ('0'..'9')('0'..'9')('0'..'9')('0'..'9')'/'('0'..'1')('0'..'9')'/'('0'..'3')('0'..'9');
+
+terminal TIME: ('0'..'2')('0'..'9')':'('0'..'9')('0'..'9');

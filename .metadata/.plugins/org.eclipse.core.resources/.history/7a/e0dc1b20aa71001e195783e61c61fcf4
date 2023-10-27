@@ -1,0 +1,15 @@
+grammar org.xtext.example.calendar.MyCld with org.eclipse.xtext.common.Terminals
+
+generate myCld "http://www.xtext.org/example/calendar/MyCld"
+
+Calendar:
+	'calendar' '{' events+=Event* '}';
+	
+Event:
+	'event' name=STRING '{' 
+	('at' at=STRING) & 
+	('on' on=STRING) &
+	'}';
+
+terminal UN_INT returns ecore::EInt: ('0'..'9');
+terminal DATE: INT'/';

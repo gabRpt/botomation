@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.imta.botomation
+Bundle-ManifestVersion: 2
+Bundle-Name: org.imta.botomation
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.imta.botomation; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.16.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: org.imta.botomation.serializer,
+ org.imta.botomation.parser.antlr.internal,
+ org.imta.botomation.generator,
+ org.imta.botomation.services,
+ org.imta.botomation.botomation.util,
+ org.imta.botomation.parser.antlr,
+ org.imta.botomation.botomation,
+ org.imta.botomation.validation,
+ org.imta.botomation.scoping,
+ org.imta.botomation.botomation.impl,
+ org.imta.botomation
+Import-Package: org.apache.log4j

@@ -1,0 +1,9 @@
+grammar org.xtext.example.calendar.MyCld with org.eclipse.xtext.common.Terminals
+
+generate myCld "http://www.xtext.org/example/calendar/MyCld"
+
+Calendar:
+	elements+=Event*;
+	
+Event:
+	'event' name=ID '!';
